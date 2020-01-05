@@ -138,7 +138,7 @@
 					
 				objectiveText.innerHTML = `(${steps[menuID] + 1}) ${MENU[currentMenuIdx][menuID].objective}`;
 				contentText.innerHTML = MENU[currentMenuIdx][menuID].steps[steps[menuID]].stepText;
-				contentImage.src = "lessons/" + MENU[currentMenuIdx][menuID].tTitle.toUpperCase() + "/" + MENU[currentMenuIdx][menuID].steps[steps[menuID]].stepImage;
+				contentImage.src = "lessons/" + MENU[currentMenuIdx][menuID].tTitle.toLowerCase() + "/" + MENU[currentMenuIdx][menuID].steps[steps[menuID]].stepImage;
 					
 				if (steps[menuID] == 0)
 					buttons[0].style.visibility = "hidden";
